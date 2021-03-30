@@ -1,11 +1,15 @@
 jest.mock('../yad2/yad2-scraper');
+jest.mock('../urls', () => ({
+    yad2urls: ["http://www.yad2.co.il"]
+}));
+
 const {yad2Scrape} = require('../yad2/yad2-scraper');
 const {scrapeAll} = require('./scraper');
 
 describe('scrape all', () => {
-
     const scrapeResult =
         {
+            url: 'http://www.yad2.co.il',
             captcha: false,
             items: [
                 {
@@ -20,7 +24,7 @@ describe('scrape all', () => {
                 }
             ]
         };
-    yad2Scrape.mockImplementation(url => Promise.resolve(scrapeResult));
+    yad2Scrape.mockImplementation(() => Promise.resolve(scrapeResult));
 
     it('scrape yad2 urls and return', async () => {
         expect(await scrapeAll()).toEqual({

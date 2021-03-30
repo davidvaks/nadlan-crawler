@@ -25,8 +25,6 @@ describe('yad2 scraper', () => {
 
         const result = await yad2Scrape(url);
 
-        console.log(result);
-
         expect(result.items).toEqual(expect.arrayContaining(expectedDigest.items));
     });
 
