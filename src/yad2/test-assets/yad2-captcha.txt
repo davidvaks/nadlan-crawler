@@ -1,0 +1,39 @@
+
+<head><title>ShieldSquare Captcha</title>
+</head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>אבטחת אתר | יד2</title>
+<link data-n-head="true" data-hid="icon_16x16" rel="icon" type="image/png" href="https://assets.yad2.co.il/yad2site/y2assets/images/16px.png" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="https://captcha-assets.yad2.co.il/style.css">
+
+
+<div class="wrapper">
+    <header>
+        <div class="logo-wrapper">
+            <img class="logo" src="https://assets.yad2.co.il/yad2site/y2assets/images/header/yad2Logo.png" alt="לוגו יד2">
+            <img class="logo-mobile" src="https://assets.yad2.co.il/yad2site/y2assets/images/header/Yad2_logo_white2.svg" alt="לוגו יד2">
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">?Are you for real</h1>
+            <h2 class="sub-title">אנו מניחים שגולשים כאן בני אנוש<br>אבל רק כדי לוודא, אתם יודעים כבר מה לעשות...</h2>
+            <img class="robot-captcha" src="https://assets.yad2.co.il/y2_captcha_error_page/robot_checkup.png" alt="">
+        </div>
+        <div class="captcha-wrapper">
+            <div class="captcha-mid">
+                <!-- *Required - Uncomment the below commented php code and remove 'echo 1234' before submit -->
+                <form action="" method=POST style="width:300px;margin-left:auto;margin-right:auto;">
+                    <div class="g-recaptcha" data-sitekey="6LeH3loUAAAAAI_m15sXabjr8-Iqj2yI3F3JeK8X"></div>
+                    <input type="hidden" id="recaptcha_response" name="recaptcha_response"><br>
+                    <center><br><input type="submit" class="btn btn-success btn-sm" Value="Submit"><br></center>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="captcha-wrapper" style="margin-top: 1em;">
+            <div id="ref">
+                Captcha Digest: <b>57573bcffcfb9200aecc7f3966bb17aa9cc8ad27</b>
+            </div>
+        </div></div>
